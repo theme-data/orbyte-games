@@ -2858,7 +2858,7 @@ div#exibirFormasPagamento .btn.btn-small {
    filter: brightness(0) invert(1);
 }
 
-.vitrine-com-banner-contador {
+.listagem .vitrine-com-banner-contador {
    padding: 16px !important;
 }
 
@@ -4864,12 +4864,13 @@ body.ofertas-destacadas-abertas {
    }
  
    .video-destaque-home h2 {
-     font-size: 32px;
+     font-size: 22px;
    }
  
    .video-destaque-home p {
      margin: 13px 0 20px;
      font-size: 14px;
+     line-height: 0;
    }
  
    .video-destaque-home-play {
@@ -4886,5 +4887,9 @@ body.ofertas-destacadas-abertas {
  
    .video-destaque-modal-fechar {
      top: -38px;
+   }
+
+   .video-destaque-home-botao {
+      display: none;
    }
  }
