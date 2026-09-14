@@ -2692,9 +2692,13 @@ div#exibirFormasPagamento .btn.btn-small {
    }
 
    .c-item a {
-      height: 100px;
+      height: fit-content;
       border-radius: 8px;
    }
+
+   .c-slide {
+      padding: 10px 0;
+  }
 
    .pagina-busca .ordenar-listagem.topo {
       padding: 0 0 20px;
