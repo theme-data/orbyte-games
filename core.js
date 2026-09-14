@@ -1298,13 +1298,13 @@ if (CONFIG.bannerVitrine) {
               ? '<p>' + escaparHtml(configVideo.descricao) + '</p>'
               : '',
             '<button type="button" class="video-destaque-home-botao" aria-label="Assistir vídeo">',
-              '<span class="video-destaque-home-play-menor">▶</span>',
+              '<span class="video-destaque-home-play-menor"><img src="https://cdn.awsli.com.br/2942/2942234/arquivos/play.svg" alt="Video Play"></span>',
               escaparHtml(configVideo.textoBotao || 'ASSISTIR AGORA'),
             '</button>',
           '</div>',
 
           '<button type="button" class="video-destaque-home-play" aria-label="Assistir vídeo">',
-            '<span>▶</span>',
+            '<span><img src="https://cdn.awsli.com.br/2942/2942234/arquivos/play.svg" alt="Video Play"></span>',
           '</button>',
         '</div>',
       '</div>',
