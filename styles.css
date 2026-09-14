@@ -751,7 +751,9 @@ span.bn-t-title {
 }
 
 @media screen and (max-width: 768px) {
-   .banner-categoria-home { margin: 24px 0; }
+   .banner-categoria-home {
+      margin: 24px 0 0;
+  }
    .banner-categoria-conteudo {
       min-height: 0;
       padding: 26px 20px;
@@ -2700,7 +2702,7 @@ div#exibirFormasPagamento .btn.btn-small {
    }
 
    .c-slide {
-      padding: 10px 0;
+      padding: 10px 16px;
   }
 
    .pagina-busca .ordenar-listagem.topo {
@@ -2854,6 +2856,10 @@ div#exibirFormasPagamento .btn.btn-small {
 
 .h-menu img, .h-search img, .h-user img {
    filter: brightness(0) invert(1);
+}
+
+.vitrine-com-banner-contador {
+   padding: 16px !important;
 }
 
 .tema-cabecalho-dark #cabecalho .h-user img {
