@@ -2848,6 +2848,8 @@ div#exibirFormasPagamento .btn.btn-small {
    display: flex!important;
    align-items: center;
    justify-content: center;
+   background: rgba(255, 255, 255, .1);
+   border-radius: 99px;
 }
 
 .h-menu img, .h-search img, .h-user img {
