@@ -4947,7 +4947,7 @@ body.ofertas-destacadas-abertas {
    }
 
    .pagina-produto .produto > .row-fluid > .span5 > .principal {
-      padding: 20px;
+      padding: 20px!important;
    }
  }
 
