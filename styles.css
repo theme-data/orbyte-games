@@ -3949,7 +3949,8 @@ body.ofertas-destacadas-abertas {
 
 @media screen and (max-width: 600px) {
   .ofertas-destacadas-aba {
-    font-size: 11px;
+   font-size: 10px;
+   padding: 10px 6px;
   }
 
   .ofertas-destacadas-header {
@@ -3975,6 +3976,11 @@ body.ofertas-destacadas-abertas {
     width: 100%;
     margin-top: 3px;
   }
+
+  .ofertas-destacadas-aba-icone {
+      width: 20px;
+      height: 20px;
+   }
 }
 
 /* Header dark light */
