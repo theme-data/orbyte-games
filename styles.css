@@ -4732,7 +4732,7 @@ body.ofertas-destacadas-abertas {
    padding: 0 0 0 4px;
    border: 0;
    border-radius: 50%;
-   background: var(--white);
+   background: var(--brand-color);
    color: var(--black);
    box-shadow: 0 8px 22px rgba(0, 0, 0, .24);
    cursor: pointer;
