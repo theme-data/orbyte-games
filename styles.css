@@ -775,9 +775,12 @@ span.bn-t-title {
 
 .c-item a img {
    max-height: 70px;
-   padding: 10px;
+   padding: 8px;
    background: #f1f1f1;
    border-radius: 999px;
+   max-width: 100%;
+   aspect-ratio: 1 / 1;
+   box-sizing: border-box;
 }
 
 .c-slide .slick-track {
@@ -2840,8 +2843,8 @@ div#exibirFormasPagamento .btn.btn-small {
 }
 
 .h-menu, .h-search, .h-user {
-   width: 40px;
-   height: 40px;
+   width: 48px !important;
+   height: 48px !important;
    display: flex!important;
    align-items: center;
    justify-content: center;
@@ -2859,6 +2862,7 @@ div#exibirFormasPagamento .btn.btn-small {
    display: flex!important;
    align-items: center;
    justify-content: flex-end;
+   gap: 4px;
 }
 
 .h-user span {
@@ -2955,8 +2959,8 @@ a.atalho-menu {
 }
 
 .carrinho {
-   width: 40px;
-   height: 40px;
+   width: 48px;
+   height: 48px;
    align-items: center;
    display: flex;
    justify-content: center;
