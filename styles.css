@@ -1209,7 +1209,7 @@ ul.whatsapp-dropdown-menu li {
 
 .breadcrumbs ul,
 .breadcrumbs li {
-	display: flex;
+	display: none;
 	gap: 10px;
 }
 
@@ -2335,12 +2335,12 @@ div#exibirFormasPagamento .btn.btn-small {
 .menu.superior .nivel-dois {
 	top: 60px;
 	padding: 0;
-	background: var(--white);
+	background: var(--black);
 }
 
 .menu.superior .nivel-tres {
 	padding: 0;
-	background: var(--white);
+	background: var(--black);
 }
 
 .menu.superior .nivel-dois > li,
@@ -2810,7 +2810,7 @@ div#exibirFormasPagamento .btn.btn-small {
    top: 0;
    display: flex;
    flex-direction: column;
-   background: var(--white);
+   background: var(--black);
    width: 80%;
    height: 100dvh;
    box-shadow: 0 0 0 9999px rgba(0,0,0,.5);
@@ -4893,3 +4893,14 @@ body.ofertas-destacadas-abertas {
       display: none;
    }
  }
+
+
+ .pagina-produto .produto > .row-fluid > .span5 > .principal {
+   padding: 40px;
+   background: #f9f9f9;
+   border: 1px solid #ededed;
+}
+
+.pagina-produto .produto > .row-fluid > .span5 > .principal .cep {
+   display: none;
+}
