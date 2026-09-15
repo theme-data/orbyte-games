@@ -279,10 +279,6 @@ input:focus {
    border: 0;
 }
 
-.menu.superior .nivel-um>li:first-child {
-   padding-left: 0;
-}
-
 .menu.superior .nivel-um li strong:after {
    content: "";
    height: 1px;
@@ -3481,6 +3477,10 @@ a.atalho-menu {
 
 
 @media screen and (min-width: 768px) {
+
+   .menu.superior .nivel-um>li:first-child {
+      padding-left: 0;
+   }   
 
    .produto .conteiner-imagem img {
       width: 70%;

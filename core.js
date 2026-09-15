@@ -77,6 +77,101 @@ $(document).ready(function(){
     updateHeaderOnScroll();
 
 });
+
+$(function () {
+
+  function prepararSubmenus() {
+
+      $('.nivel-um > li.com-filho').each(function () {
+
+          const $item = $(this);
+
+          // Evita duplicar o botão
+          if (!$item.children('.toggle-submenu').length) {
+
+              $item.append(`
+                  <button 
+                      type="button" 
+                      class="toggle-submenu"
+                      aria-label="Abrir submenu"
+                  >
+                      <span></span>
+                  </button>
+              `);
+
+          }
+
+          // Mobile começa fechado
+          if ($(window).width() <= 767) {
+              $item.children('ul').hide();
+              $item.removeClass('menu-aberto');
+          }
+
+      });
+
+  }
+
+
+  // Clique SOMENTE na seta
+  $(document).on('click', '.nivel-um > li.com-filho > .toggle-submenu', function (e) {
+
+      e.preventDefault();
+      e.stopPropagation();
+
+      if ($(window).width() > 767) {
+          return;
+      }
+
+      const $item = $(this).closest('li.com-filho');
+      const $submenu = $item.children('ul').first();
+
+      if ($item.hasClass('menu-aberto')) {
+
+          $item.removeClass('menu-aberto');
+
+          $submenu
+              .stop(true, true)
+              .slideUp(250);
+
+      } else {
+
+          // Fecha os outros
+          $('.nivel-um > li.com-filho.menu-aberto')
+              .not($item)
+              .removeClass('menu-aberto')
+              .children('ul')
+              .stop(true, true)
+              .slideUp(250);
+
+          // Abre atual
+          $item.addClass('menu-aberto');
+
+          $submenu
+              .stop(true, true)
+              .slideDown(250);
+
+      }
+
+  });
+
+
+  prepararSubmenus();
+
+
+  $(window).on('resize', function () {
+
+      if ($(window).width() > 767) {
+
+          $('.nivel-um > li.com-filho')
+              .removeClass('menu-aberto')
+              .children('ul')
+              .removeAttr('style');
+
+      }
+
+  });
+
+});
   
   // Quando clicar no botão troca a classe do dropdown para abrir/fechar
   $(document).on('click', '.whatsapp-btn', function() {
