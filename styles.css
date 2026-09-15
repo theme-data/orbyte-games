@@ -2885,7 +2885,8 @@ div#exibirFormasPagamento .btn.btn-small {
    display: none;
    transform: translateY(-50%);
    height: 100dvh;
-   align-items: center;
+   align-items: start;
+   box-sizing: border-box;
 }
 
 .menu.superior .nivel-um.active + .close-menu {
@@ -4986,4 +4987,66 @@ body.ofertas-destacadas-abertas {
 
 .inferior.row-fluid.active.scrolled {
    top: 92px;
+}
+
+/* Menu abre e fecha */
+
+@media (max-width: 767px) {
+
+   .nivel-um > li.com-filho {
+       position: relative;
+   }
+
+   /* Link continua clicável normalmente */
+   .nivel-um > li.com-filho > a {
+       position: relative;
+       z-index: 1;
+       padding-right: 55px;
+   }
+
+   /* Área exclusiva para abrir submenu */
+   .nivel-um > li.com-filho > .toggle-submenu {
+       position: absolute;
+       top: 0;
+       right: 0;
+
+       width: 50px;
+       height: 50px;
+
+       padding: 0;
+       margin: 0;
+
+       border: 0;
+       background: transparent;
+
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
+       cursor: pointer;
+
+       z-index: 10;
+   }
+
+   .nivel-um > li.com-filho > .toggle-submenu span {
+       display: block;
+
+       width: 9px;
+       height: 9px;
+
+       border-right: 2px solid currentColor;
+       border-bottom: 2px solid currentColor;
+
+       transform: rotate(45deg);
+       transition: transform .2s ease;
+   }
+
+   .nivel-um > li.com-filho.menu-aberto > .toggle-submenu span {
+       transform: rotate(225deg);
+   }
+
+ .menu.superior .nivel-um>li {
+     padding: 0;
+  }
+
 }
