@@ -5050,3 +5050,7 @@ body.ofertas-destacadas-abertas {
   }
 
 }
+
+.pagina-produto .conteiner-imagem, .pagina-produto .conteiner-imagem > div {
+   height: 260px;
+}
