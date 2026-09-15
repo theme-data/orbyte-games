@@ -53,6 +53,30 @@ $(document).ready(function(){
   `;
 
   $('#rodape .institucional .lista-redes').after(whatsappDropdownHtml);
+
+  $(function () {
+
+    function updateHeaderOnScroll() {
+        const $inferior = $('.conteudo-topo .inferior');
+
+        if ($(window).width() <= 767) {
+
+            if ($(window).scrollTop() > 10) {
+                $inferior.addClass('scrolled');
+            } else {
+                $inferior.removeClass('scrolled');
+            }
+
+        } else {
+            $inferior.removeClass('scrolled');
+        }
+    }
+
+    $(window).on('scroll resize', updateHeaderOnScroll);
+
+    updateHeaderOnScroll();
+
+});
   
   // Quando clicar no botão troca a classe do dropdown para abrir/fechar
   $(document).on('click', '.whatsapp-btn', function() {
