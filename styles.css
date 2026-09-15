@@ -2721,7 +2721,7 @@ div#exibirFormasPagamento .btn.btn-small {
    }
 
    .conteiner-imagem, .conteiner-imagem > div {
-      height: 260px;
+      height: fit-content;
   }
   
   .produto .conteiner-imagem img {
@@ -3189,7 +3189,6 @@ a.atalho-menu {
 }
 
 .finalizar-compra .span12 .botao.grande {
-   width: 100%;
    position: fixed;
    bottom: 0;
    left: 0;
@@ -3199,6 +3198,7 @@ a.atalho-menu {
    margin: 20px auto;
    box-sizing: border-box;
    width: 90%;
+   background: 0 0 0 20px #fff
 }
 
 .finalizar-compra .span12 a.botao {
@@ -4952,6 +4952,11 @@ body.ofertas-destacadas-abertas {
 
    .busca #form-buscar {
       background: #fff;
+   }
+
+   .pagina-carrinho .ofertas-destacadas,
+   .carrinho-checkout .ofertas-destacadas {
+      display: none!important;
    }
  }
 

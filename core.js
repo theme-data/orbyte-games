@@ -316,6 +316,8 @@ $(document).ready(function(){
         responsive: [
           {
             breakpoint: 768,
+            draggable: true,
+            slidesToScroll: 1,
             settings: {
               slidesToShow: 2
             }
