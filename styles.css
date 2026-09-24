@@ -5,6 +5,10 @@
    --fundo-cabecalho: #1E1E1E;
    --texto-cabecalho: #FFFFFF;
 
+   /* RODAPE */
+   --fundo-rodape: #1E1E1E;
+   --texto-rodape: #FFFFFF;
+
    /* PAGINA */
    --text-color: #FFFFFF;
    --brand-color: #006AE3;
@@ -64,10 +68,6 @@
    --white-alpha-45: rgba(255, 255, 255, .45);
    --white-alpha-70: rgba(255, 255, 255, .7);
    --white-alpha-86: rgba(255, 255, 255, .86);
-
-   /* RODAPE */
-   --fundo-rodape: #1E1E1E;
-   --texto-rodape: #FFFFFF;
 }
 
 body {
@@ -183,7 +183,7 @@ input:focus {
 }
 
 #cabecalho {
-   background: var(--white);
+   background: var(--fundo-cabecalho);
    border-bottom: 1px solid var(--black-alpha-20);
    position: sticky;
    z-index: 10000;
@@ -195,7 +195,7 @@ input:focus {
 }
 
 #cabecalho {
-   background: var(--white);
+   background: var(--fundo-cabecalho);
 }
 
 #cabecalho .conteudo-topo .inferior {
@@ -1067,12 +1067,12 @@ span.bn-t-title {
 	margin: 0;
 	font-size: 16px;
 	padding: 0 0 20px;
-   color: var(--black);
+   color: var(--texto-rodape);
    font-weight: 600;
 }
 
 #rodape {
-	background: var(--white);
+	background: var(--fundo-rodape);
 	border-top: 1px solid var(--black-alpha-10);
 }
 
@@ -1083,7 +1083,7 @@ span.bn-t-title {
 
 .links-rodape li a {
 	font-size: 16px;
-   color: var(--black);
+   color: var(--texto-rodape);
 }
 
 .links-rodape li {
@@ -1100,7 +1100,7 @@ span.bn-t-title {
 }
 
 #rodape .redes-sociais .titulo {
-	color: var(--white);
+	color: var(--texto-rodape);
 	font-weight: 500;
 }
 
@@ -1204,6 +1204,10 @@ span.bn-t-title {
     padding: 0;
 }
 
+#rodape .atendimento-rodape li > img {
+   filter: brightness(0) invert(1);
+}
+
 .pagamento-selos .conteiner {
     padding: 0;
 }
@@ -1228,12 +1232,12 @@ button.whatsapp-btn {
     border: 1px solid var(--brand-color);
     padding: 12px 32px;
     margin-top: 10px;
-   color: var(--black);
+   color: var(--texto-rodape);
    border-radius: 6px;
 }
 
 button.whatsapp-btn i {
-   color: var(--black);
+   color: var(--texto-rodape);
 }
 
 ul.whatsapp-dropdown-menu {
@@ -4120,8 +4124,8 @@ body.ofertas-destacadas-abertas {
 .tema-cabecalho-dark .cabecalho,
 .tema-cabecalho-dark .header-principal,
 .tema-cabecalho-dark .header-central {
-  background: var(--black) !important;
-  color: var(--white) !important;
+  background: var(--fundo-cabecalho) !important;
+  color: var(--texto-cabecalho) !important;
 }
 
 .tema-cabecalho-dark #cabecalho a,
@@ -4135,7 +4139,7 @@ body.ofertas-destacadas-abertas {
 .tema-cabecalho-dark .header-principal span,
 .tema-cabecalho-dark .header-central a,
 .tema-cabecalho-dark .header-central span {
-  color: var(--white) !important;
+  color: var(--texto-cabecalho) !important;
 }
 
 .tema-cabecalho-dark #cabecalho svg,
