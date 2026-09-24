@@ -4543,7 +4543,7 @@ body.ofertas-destacadas-abertas {
    width: 100% !important;
  }
  
- .vitrine-destaque-produtos .listagem-linha > div > ul {
+ .vitrine-destaque-produtos > .listagem-linha .slick-track {
    display: grid;
    width: 100% !important;
    grid-template-columns: repeat(2, minmax(0, 1fr));
