@@ -304,8 +304,12 @@ input:focus {
 }
 
 #cabecalho .span8.busca-mobile {
-   max-width: 500px;
-   margin: 0;
+   max-width: 100%;
+   margin: 0 0 auto;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .busca input {
@@ -336,6 +340,8 @@ input:focus::placeholder {
    border: 0;
    padding: 0;
    background: none;
+   max-width: 600px;
+   width: 100%;
 }
 
 .busca .botao-busca {
@@ -3815,7 +3821,7 @@ a.pixel-logo:before {
 }
 
 .h-actions {
-   margin: 0 0 0 auto;
+   /* margin: 0 0 0 auto; */
 }
 
 .vitrine-com-banner-contador {
