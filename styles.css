@@ -340,7 +340,7 @@ input:focus::placeholder {
    border: 0;
    padding: 0;
    background: none;
-   max-width: 600px;
+   max-width: 800px;
    width: 100%;
 }
 
@@ -5060,8 +5060,8 @@ body.ofertas-destacadas-abertas {
      padding: 0;
   }
 
+  .pagina-produto .conteiner-imagem, .pagina-produto .conteiner-imagem > div {
+   height: 260px;
 }
 
-.pagina-produto .conteiner-imagem, .pagina-produto .conteiner-imagem > div {
-   height: 260px;
 }
