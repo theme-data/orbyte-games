@@ -657,6 +657,11 @@ span.bn-t-title {
    font-size: 12px;
 }
 
+.bandeiras-produto {
+   right: 10px;
+   left: auto;
+}
+
 .bandeiras-produto .bandeira-promocao {
    background-color: var(--brand-color);
    color: var(--white) !important;
