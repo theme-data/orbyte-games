@@ -2486,7 +2486,7 @@ div#exibirFormasPagamento .btn.btn-small {
     background: var(--white);
     border: 0;
     box-shadow: 0 0 30px var(--black-alpha-50);
-    top: 60px;
+    top: 48px;
 }
 
 .carrinho-interno>div .botao {
