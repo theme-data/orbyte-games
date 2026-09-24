@@ -1111,6 +1111,10 @@ span.bn-t-title {
    font-weight: 600;
 }
 
+#rodape .pagamento-selos .titulo {
+   color: var(--black);
+}
+
 #rodape {
 	background: var(--fundo-rodape);
 	border-top: 1px solid var(--black-alpha-10);
