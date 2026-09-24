@@ -380,47 +380,41 @@ $(function () {
   }
 })();
 
-  // --------- SLIDER
-  
-    // remove comportamento antigo
-    $('#listagemProdutos .listagem-linha .flex-viewport').css({
-      overflow: 'visible'
+// Carrossel de produtos
+$('#listagemProdutos .listagem-linha .flex-viewport').css({
+  overflow: 'visible'
+});
+
+$('#listagemProdutos .listagem-linha.flexslider').removeClass('flexslider');
+
+if (typeof $.fn.slick === 'function') {
+  $('#listagemProdutos ul .flex-viewport > ul').each(function () {
+    const $slider = $(this);
+
+    // Evita inicializar a mesma vitrine duas vezes
+    if ($slider.hasClass('slick-initialized')) return;
+
+    $slider.removeAttr('style');
+    $slider.children('li').removeAttr('style');
+
+    $slider.slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: false,
+          dots: true
+        }
+      }]
     });
-  
-    $('#listagemProdutos .listagem-linha.flexslider').removeClass('flexslider');
-  
-    const $carousel = $('#listagemProdutos .produtos-carrossel');
-  
-    // evita iniciar duas vezes
-    if (!$carousel.hasClass('slick-initialized')) {
-  
-      // remove estilos inline do flexslider
-      $carousel.removeAttr('style');
-      $carousel.find('li').removeAttr('style');
-  
-      $carousel.slick({
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        infinite: false,
-        arrows: true,
-        dots: false,
-        speed: 400,
-        draggable: true,
-        adaptiveHeight: false,
-  
-        responsive: [
-          {
-            breakpoint: 768,
-            draggable: true,
-            slidesToScroll: 1,
-            settings: {
-              slidesToShow: 2
-            }
-          }
-        ]
-      });
-  
-    }
+  });
+}
   
   
       // -----------------------------
