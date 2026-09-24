@@ -4748,6 +4748,7 @@ body.ofertas-destacadas-abertas {
    .vitrine-destaque-produtos > .listagem-linha .slick-track {
      grid-template-columns: 1fr;
      gap: 9px;
+     transform: none!important;
    }
  
    .vitrine-destaque-produtos .listagem-item {
