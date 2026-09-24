@@ -544,9 +544,9 @@ span.bn-t-title {
    padding: 0;
 }
 
-#listagemProdutos .slick-track {
+/* #listagemProdutos .slick-track {
    width: 100% !important;
-}
+} */
 
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
    height: fit-content;
