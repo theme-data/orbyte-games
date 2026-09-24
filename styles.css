@@ -830,13 +830,14 @@ span.bn-t-title {
 }
 
 .c-item a img {
-   max-height: 70px;
-   padding: 8px;
+   max-height: 90px;
+   padding: 0;
    background: var(--surface-soft);
-   border-radius: 999px;
+   border-radius: 12px;
    max-width: 100%;
    aspect-ratio: 1 / 1;
    box-sizing: border-box;
+   margin-bottom: 10px;
 }
 
 .c-slide .slick-track {
@@ -3484,6 +3485,10 @@ a.atalho-menu {
 
 
 @media screen and (min-width: 768px) {
+
+   button.toggle-submenu {
+      display: none;
+   }
 
    .menu.superior .nivel-um>li:first-child {
       padding-left: 0;
