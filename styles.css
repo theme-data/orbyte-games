@@ -1132,7 +1132,7 @@ span.bn-t-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: var(--black);
+    color: var(--texto-rodape);
 }
 
 .lista-redes li {
@@ -1225,6 +1225,7 @@ span.bn-t-title {
 
 .atendimento-rodape ul * {
     font-size: 16px;
+    color: var(--texto-rodape);
 }
 
 button.whatsapp-btn {
@@ -1409,7 +1410,9 @@ ul.whatsapp-dropdown-menu li {
    width: 16px;
    height: 16px;
    background-size: 100%;
+   filter: brightness(0) invert(1);
 }
+
 .barra-inicial .canais-contato ul li i {
    display: none;
 }
