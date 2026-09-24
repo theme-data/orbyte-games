@@ -4544,11 +4544,16 @@ body.ofertas-destacadas-abertas {
  }
  
  .vitrine-destaque-produtos > .listagem-linha .slick-track {
-   display: grid;
+   display: grid!important;
    width: 100% !important;
    grid-template-columns: repeat(2, minmax(0, 1fr));
    gap: 24px;
  }
+
+ .vitrine-destaque-produtos > .listagem-linha .slick-track:before, .vitrine-destaque-produtos > .listagem-linha .slick-track:after {
+   display: none;
+}
+
 
  .vitrine-destaque-produtos .listagem-linha > div > ul:after {
    display: none;
@@ -4572,6 +4577,7 @@ body.ofertas-destacadas-abertas {
    overflow: hidden;
    transition: border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
    margin: 0 !important;
+   width: 100%;
  }
  
  .vitrine-destaque-produtos .listagem-item:hover {
