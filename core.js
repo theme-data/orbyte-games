@@ -402,7 +402,7 @@ if (typeof $.fn.slick === 'function') {
       dots: false,
       infinite: false,
       speed: 300,
-      slidesToShow: 6,
+      slidesToShow: 5,
       slidesToScroll: 1,
       responsive: [{
         breakpoint: 768,
