@@ -261,7 +261,7 @@ $(function () {
   // Ativa o Slick Slider na lista de categorias
   $('.c-slide').slick({
       slidesToShow: 9,
-      slidesToScroll: 1,
+      slidesToScroll: 9,
       arrows: true,
       dots: false,
       infinite: true,
@@ -269,7 +269,8 @@ $(function () {
           {
               breakpoint: 768,
               settings: {
-                  slidesToShow: 5
+                  slidesToShow: 5,
+                  slidesToScroll: 5,
               }
           }
       ]
