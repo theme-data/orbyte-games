@@ -4745,7 +4745,7 @@ body.ofertas-destacadas-abertas {
      padding: 6px !important;
    }
  
-   .vitrine-destaque-produtos .listagem-linha > div > ul {
+   .vitrine-destaque-produtos > .listagem-linha .slick-track {
      grid-template-columns: 1fr;
      gap: 9px;
    }
