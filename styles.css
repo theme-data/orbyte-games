@@ -1001,7 +1001,7 @@ span.bn-t-title {
    content: "\f00c";
    width: 16px;
    height: 16px;
-   display: block;
+   display: none;
    font-family: 'FontAwesome-v4';
    margin-left: 4px;
 }
@@ -3482,6 +3482,10 @@ a.atalho-menu {
 
 }
 
+.pagina-produto .listagem-item .acoes-produto {
+   padding: 0;
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -3494,9 +3498,9 @@ a.atalho-menu {
       padding-left: 0;
    }   
 
-   .produto .conteiner-imagem img {
-      width: 70%;
-   }
+   .pagina-produto .listagem .info-produto {
+      padding: 12px;
+  }
 
    .logo a img {
       right: auto;
