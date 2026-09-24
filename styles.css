@@ -548,6 +548,24 @@ span.bn-t-title {
    width: 100% !important;
 } */
 
+.listagem-linha .slick-track,
+.listagem-linha li.slick-slide {
+   display: flex!important;
+   border: 0;
+}
+
+.pagina-inicial ul.slick-initialized.slick-slider {
+   width: 100% !important;
+   margin: 0;
+}
+
+.listagem .produtos-carrossel .listagem-linha.flexslider {
+   max-width: 1440px;
+   margin: 0 auto!important;
+   width: 100%;
+   padding-top: 6px;
+}
+
 .listagem .span3 .imagem-produto, .listagem .produtos-carrossel[data-produtos-linha="4"] .imagem-produto {
    height: fit-content;
    width: 100%;
