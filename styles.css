@@ -3204,8 +3204,9 @@ a.atalho-menu {
    margin: 20px 0 20px;
 }
 
-.listagem .listagem-linha>ul {
-   display: none;
+.pagina-categoria .listagem .listagem-linha>ul,
+.pagina-busca .listagem .listagem-linha>ul {
+   display: grid;
    grid-template-columns: 1fr 1fr;
 }
 
