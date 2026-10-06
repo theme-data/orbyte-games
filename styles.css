@@ -1735,14 +1735,13 @@ div#modal-pagamento.ativo {
 }
 
 .compre-junto__atributo--lista {
-	width: 100%;
-	box-sizing: border-box;
-	background: var(--white);
-	border: 1px solid var(--white-alpha-20);
-	height: 44px;
-	color: var(--white);
-	border-radius: 0;
-	font-family: 'Chakra Petch', sans-serif;
+   width: 100%;
+   box-sizing: border-box;
+   background: var(--white);
+   border: 1px solid #d8d8d8;
+   height: 44px;
+   color: var(--black);
+   border-radius: 5;
 }
 
 .compre-junto__atributo--lista {
@@ -3519,7 +3518,7 @@ a.atalho-menu {
    cursor: pointer;
    padding: 20px;
    margin-bottom: 20px;
-   background: var(--black-alpha-05);
+   background: var(--white-alpha-05);
 }
 
 .chev {
@@ -3545,6 +3544,7 @@ a.atalho-menu {
 
 .chev img {
    max-width: 18px;
+   filter: brightness(0) invert(1);
 }
 
 #rodape .institucional .lista-redes ul {
@@ -3613,6 +3613,11 @@ a.atalho-menu {
 
 .vitrine-com-banner-contador {
    padding: 16px !important;
+}
+
+.pagina-produto .listagem .listagem-linha>ul {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
 }
 
 }
@@ -5129,7 +5134,6 @@ a.botao-comprar-whatsapp img {
    #rodape .institucional .atendimento-rodape > ul {
       display: block!important;
       padding-bottom: 24px;
-      border-bottom: 1px solid #d8d8d8;
   }
  }
 
