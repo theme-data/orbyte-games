@@ -1,0 +1,382 @@
+<style>
+    /* ======================================================
+            CORES DA LOJA
+        ====================================================== */
+    :root {
+    /* CABEÇALHO */
+         --fundo-cabecalho: #07095d!important;
+         --texto-cabecalho: #f9f9f9!important;
+    /* RODAPÉ */
+         --fundo-rodape: #0d0359!important;
+         --texto-rodape: #f9f9f9!important;
+    /* PREÇO PROMOCIONAL */
+         --preco-listagem: #41975e!important;
+         --preco-pdp: #41975e!important;
+         --preco-pdp-a-vista: #006ae3!important;
+    /* Flag de desconto */
+         --fundo-flag: #5bd985!important;
+         --texto-flag: #1e1e1e!important;
+          --bg-color: #1E1E1E!important;
+          --bg-store-color: #1e1e1e!important;
+          --text-color: #FFFFFF!important;
+          --brand-color: #3d64f6 !important;
+          --black: #1E1E1E!important;
+          --pure-black: #000000!important;
+          --white: #FFFFFF!important;
+          --grey: #4C4C4C!important;
+          --surface-dark: #303030!important;
+          --surface-video: #222222!important;
+          --surface-soft: #f3f7ff!important;
+          --surface-muted: #f3f7ff!important;
+          --surface-highlight: #f3f7ff!important;
+          --surface-hover: #F5F5F5!important;
+          --surface-subtle: #F7F7F7!important;
+          --surface-light: #F9F9F9!important;
+          --text-soft: #607081!important;
+          --text-low: #555555!important;
+          --text-medium: #666666!important;
+          --text-tertiary: #676767!important;
+          --text-secondary: #737373!important;
+          --text-subtle: #777777!important;
+          --text-muted: #999999!important;
+          --border-subtle: #DFDFDF!important;
+          --border-light: #E7E7E7!important;
+          --border-soft: #EDEDED!important;
+          --whatsapp-color: #25D366!important;
+          --error-color: #FF9292!important;
+          --star-color: #FFB52E!important;
+          --black-alpha-0: rgba(0, 0, 0, 0)!important;
+          --black-alpha-035: rgba(0, 0, 0, .035)!important;
+          --black-alpha-05: rgba(0, 0, 0, .05)!important;
+          --black-alpha-09: rgba(0, 0, 0, .09)!important;
+          --black-alpha-10: rgba(0, 0, 0, .1)!important;
+          --black-alpha-18: rgba(0, 0, 0, .18)!important;
+          --black-alpha-20: rgba(0, 0, 0, .2)!important;
+          --black-alpha-24: rgba(0, 0, 0, .24)!important;
+          --black-alpha-40: rgba(0, 0, 0, .4)!important;
+          --black-alpha-50: rgba(0, 0, 0, .5)!important;
+          --black-alpha-55: rgba(0, 0, 0, .55)!important;
+          --black-alpha-56: rgba(0, 0, 0, .56)!important;
+          --black-alpha-60: rgba(0, 0, 0, .6)!important;
+          --black-alpha-62: rgba(0, 0, 0, .62)!important;
+          --black-alpha-82: rgba(0, 0, 0, .82)!important;
+          --black-alpha-84: rgba(0, 0, 0, .84)!important;
+          --black-alpha-94: rgba(0, 0, 0, .94)!important;
+          --white-alpha-05: rgba(255, 255, 255, .05)!important;
+          --white-alpha-10: rgba(255, 255, 255, .1)!important;
+          --white-alpha-20: rgba(255, 255, 255, .2)!important;
+          --white-alpha-45: rgba(255, 255, 255, .45)!important;
+          --white-alpha-70: rgba(255, 255, 255, .7)!important;
+          --white-alpha-86: rgba(255, 255, 255, .86)!important;
+        }
+    /* ======================================================
+            NOMES DAS TAGS BASEADO NO ID DAS CATEGORIAS
+        ====================================================== */
+    .listagem-item.prod-cat-20351947 .imagem-produto:after {
+          content: "Peças selecionadas" ;
+        }
+    .listagem-item.prod-cat-20352581 .imagem-produto:after {
+          content: "Destaques da coleção" ;
+        }
+    .listagem-item .imagem-produto:after {
+            display: none!important;
+        }
+        </style>
+        <script>
+    /* ======================================================
+           ⚙️ CONFIGURAÇÕES EDITÁVEIS DO TEMA
+        ====================================================== */
+        window.THEME_CONFIG = {
+    /* =========================
+            VÍDEO EM DESTAQUE — COLEÇÃO DE MODA
+          ========================== */
+          videoDestaqueHome: {
+            ativo: false,
+            somenteHome: true,
+    /* A seção será inserida antes deste elemento */
+            seletorInsercao: ".vitrine-24162843",
+            etiqueta: "VISTA SUA PERSONALIDADE",
+            titulo: "Seu estilo, em cada detalhe.",
+            descricao: "Descubra peças para compor looks que combinam com você. Dos básicos do dia a dia às produções para ocasiões especiais, encontre novas formas de expressar seu estilo.",
+            textoBotao: "CONHECER A COLEÇÃO",
+    /* Insira o ID de um vídeo da coleção e ative esta seção. */
+            youtubeId: "",
+    /*
+              Deixe vazio para usar automaticamente
+              a thumbnail oficial do vídeo no YouTube.
+    */
+            imagemFundo: "",
+    /* esquerda | centro */
+            alinhamentoTexto: "esquerda"
+          },
+    /* =========================
+            AVALIAÇÕES — HOME
+          ========================== */
+          /* Depoimentos ilustrativos: substitua por avaliações reais antes de ativar. */
+          avaliacoesHome: {
+            ativo: false,
+            somenteHome: true,
+    /* A seção será inserida antes deste elemento */
+            seletorInsercao: "#rodape",
+            etiqueta: "AVALIAÇÕES DE CLIENTES",
+            titulo: "Quem compra, recomenda",
+            reviews: [
+              {
+                ativo: true,
+                nota: 5,
+                texto: "Adorei o caimento e os detalhes da peça. Combina muito com meu estilo!",
+                nome: "Lucas M.",
+                cargo: "Depoimento ilustrativo",
+                foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/01.png"
+              },
+              {
+                ativo: true,
+                nota: 5,
+                texto: "Escolhi uma peça para presentear e acertei na escolha. O tecido é muito agradável!",
+                nome: "Rafael S.",
+                cargo: "Depoimento ilustrativo",
+                foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/02.png"
+              },
+              {
+                ativo: true,
+                nota: 5,
+                texto: "Encontrei uma peça que combina com tudo. Ficou perfeita nas minhas composições!",
+                nome: "Marcos P.",
+                cargo: "Depoimento ilustrativo",
+                foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/03.png"
+              },
+              {
+                ativo: true,
+                nota: 4.5,
+                texto: "Gostei tanto da primeira compra que voltei para renovar meus looks. São peças muito versáteis!",
+                nome: "Gabriel A.",
+                cargo: "Depoimento ilustrativo",
+                foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/04.png"
+              },
+              {
+                ativo: true,
+                nota: 5,
+                texto: "O atendimento me ajudou a escolher o tamanho da peça. Adorei como ficou!",
+                nome: "Felipe C.",
+                cargo: "Depoimento ilustrativo",
+                foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/01.png"
+              }
+            ]
+          },
+    /* =========================
+            BOTÃO "COMPRE PELO WHATSAPP"
+            NA LISTAGEM DE PRODUTOS
+          ========================== */
+          whatsappListagem: {
+            ativo: true,
+    /* Somente números, com DDI e DDD */
+            telefone: "5511999999999",
+            textoBotao: "COMPRE PELO WHATSAPP",
+            mensagem: "Olá! Tenho interesse nesta peça:\n\n{produto}\n{link}",
+    /* Exibe somente nas vitrines/listagens.
+              Não adiciona na página individual do produto. */
+            novaAba: true
+          },
+    /* =========================
+            TEMA DO CABEÇALHO
+            Opções: "dark" | "light"
+          ========================== */
+          temaCabecalho: "dark",
+    /* =========================
+            OFERTAS DESTACADAS
+          ========================== */
+          ofertasDestacadas: {
+            ativo: true,
+            tituloAba: "Ofertas para você",
+            tituloPainel: "Ofertas especiais",
+            textoVazio: "Nenhuma oferta disponível no momento.",
+    /* true: o painel abre automaticamente na primeira visita */
+            abrirAutomaticamente: false,
+            ofertas: [
+              {
+                ativo: true,
+                titulo: "Economize 10% na sua compra",
+                descricao: "Use o cupom na finalização do pedido",
+                tipo: "cupom", // cupom | link
+                cupom: "GARA10",
+                textoBotao: "COPIAR"
+              },
+              {
+                ativo: true,
+                titulo: "Peças selecionadas com desconto",
+                descricao: "Ofertas válidas por tempo limitado",
+                tipo: "link",
+                link: "/promocoes",
+                textoBotao: "VER OFERTAS"
+              },
+              {
+                ativo: true,
+                titulo: "Frete grátis",
+                descricao: "Para pedidos acima de R$ 199",
+                tipo: "link",
+                link: "/frete-gratis",
+                textoBotao: "APROVEITAR"
+              }
+            ]
+          },
+    /* =========================
+            TEXTO BARRA INICIAL
+          ==========================*/
+          alertBar: {
+            mensagem: "Moda para expressar seu estilo em todos os momentos"
+          },
+    /* =========================
+            VITRINE DESTAQUE
+          ========================== */
+          vitrineDestaque: {
+            idVitrine: "24162844",
+            seloPadrao: "OFERTA",
+            textoBotao: "VER OFERTA",
+            mostrarDesconto: true
+          },
+    /* =========================
+            ✨ BANNERS POR CATEGORIA (HOME)
+            Use o ID da vitrine/categoria exibido na home.
+            Para não mostrar um banner, remova o item ou use ativo: false.
+          ==========================*/
+          bannersCategoriasHome: [
+            {
+              ativo: true,
+              idCategoria: "24286696",
+              etiqueta: "SELEÇÃO DE MODA",
+              titulo: "Ofertas especiais para você",
+              usarContador: true,
+              dataFim: "2026-12-31T23:59:59-03:00",
+              texto: "Peças selecionadas com condições especiais por tempo limitado.",
+              textoBotao: "VER PEÇAS",
+              linkBotao: "/promocoes"
+            }
+          ],
+    /* =========================
+            MOVER TARJA
+          ==========================*/
+          vitrineTarja: {
+            idVitrine: "24162844"
+          },
+    /* =========================
+            📦 ALERTA PRODUTO CONFIG
+          ==========================*/
+          alertaProduto: {
+            icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/shield.svg",
+            texto: "Confira as medidas e escolha a peça que combina com você."
+          },
+    /* =========================
+             📲 WHATSAPP
+          ==========================*/
+          whatsappNumbers: [
+            { title: "Vendas", phone: "5511999999999", display: "(11) 99999-9999" },
+            { title: "Suporte", phone: "5511988888888", display: "(11) 98888-8888" },
+            { title: "Financeiro", phone: "5511977777777", display: "(11) 97777-7777" }
+          ],
+    /* =========================
+             📲 MINI BANNER
+          ==========================*/
+          miniBannerPosicao: "lancamento",
+    /* =========================
+             🧾 ATENDIMENTO
+          ==========================*/
+          atendimento: {
+            titulo: "Atendimento",
+            horarios: [
+              "Segunda a sexta: das 11h30 às 22h",
+              "Sábado: das 10h às 18h",
+              "Domingos e feriados: fechado"
+            ],
+            whatsapp: {
+              icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/whatsapp.svg",
+              alt: "WhatsApp",
+              number: "(11) 98765-4321"
+            },
+            email: {
+              icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/email.svg",
+              alt: "E-mail",
+              /* Preencha com o e-mail real da loja. */
+              address: ""
+            }
+          },
+    /* =========================
+            📢 TARJA AUTO SLIDE (IMAGEM)
+          ==========================*/
+          tarja: [
+            { icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/card-check.svg", titulo: "Parcele em até", texto: "12x no cartão de crédito." },
+            { icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/envio-digital.svg", titulo: "Seu próximo look", texto: "Peças para diferentes ocasiões." },
+            { icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/discount.svg", titulo: "Indique um amigo", texto: "Indique um amigo e ganhe 15% off." },
+            { icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/compra-segura.svg", titulo: "Pagamento seguro", texto: "Suas informações com segurança." }
+          ],
+    /* =========================
+             🗂️ CATEGORIAS HOME
+          ==========================*/
+          categorias: [
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/1.png", link: "#", alt: "Camisetas", titulo: "Camisetas" },
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/2.png", link: "#", alt: "Camisas", titulo: "Camisas"},
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/3.png", link: "#", alt: "Blusas", titulo: "Blusas" },
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/4.png", link: "#", alt: "Calças", titulo: "Calças" },
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/5.png", link: "#", alt: "Jeans", titulo: "Jeans" },
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/6.png", link: "#", alt: "Shorts", titulo: "Shorts" },
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/7.png", link: "#", alt: "Saias", titulo: "Saias" },
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/8.png", link: "#", alt: "Vestidos", titulo: "Vestidos"},
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/9.png", link: "#", alt: "Conjuntos", titulo: "Conjuntos" },
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/10.png", link: "#", alt: "Jaquetas", titulo: "Jaquetas" },
+            { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/11.png", link: "#", alt: "Acessórios", titulo: "Acessórios" }
+          ],
+    /* =========================
+             ❓ FAQ
+          ==========================*/
+          faqItems: [
+            {
+              pergunta: "Quais formas de pagamento vocês aceitam?",
+              resposta: "Aceitamos cartão de crédito, PIX e boleto bancário."
+            },
+            {
+              pergunta: "Como recebo minhas peças após a compra?",
+              resposta: "A entrega será realizada no endereço informado no pedido, conforme a modalidade de envio escolhida. Consulte o prazo e o valor do frete antes de finalizar a compra."
+            },
+            {
+              pergunta: "Como escolher o tamanho ideal?",
+              resposta: "Confira as medidas disponíveis na página do produto e compare com uma roupa que veste bem em você. A modelagem pode variar entre as peças. Em caso de dúvida, fale com nosso atendimento antes de comprar."
+            },
+            {
+              pergunta: "Qual é o prazo de entrega do meu pedido?",
+              resposta: "Consulte a estimativa de entrega informando seu CEP na loja. O prazo pode variar conforme o destino e a modalidade de envio escolhida."
+            },
+            {
+              pergunta: "Como lavar e conservar minhas roupas?",
+              resposta: "Siga as instruções de lavagem, secagem e passagem indicadas na etiqueta de cada peça. Os cuidados variam conforme o tecido e ajudam a preservar as cores e a modelagem."
+            }
+          ],
+    /* =========================
+             ⭐ BENEFÍCIOS
+          ==========================*/
+          beneficios: [
+            {
+              icone: "🎧",
+              titulo: "Atendimento ao cliente",
+              texto: "Tire suas dúvidas nos horários de atendimento."
+            },
+            {
+              icone: "📦",
+              titulo: "Entrega do seu pedido",
+              texto: "Consulte prazos e condições para o seu CEP."
+            },
+            {
+              icone: "👥",
+              titulo: "Indique um amigo",
+              texto: "Ganhem desconto juntos."
+            },
+            {
+              icone: "🔒",
+              titulo: "Pagamento seguro",
+              texto: "Seus dados protegidos."
+            }
+          ]
+        };
+        </script>
+    
+    <script src="https://theme-data.github.io/orbyte-games/core.js"></script>
+    <link rel="stylesheet" href="https://theme-data.github.io/orbyte-games/styles.css">
+  
