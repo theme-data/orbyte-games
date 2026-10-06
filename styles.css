@@ -190,6 +190,14 @@ input:focus {
    top: 0;
 }
 
+#cabecalho .menu.superior .nivel-dois a {
+   color: var(--black)!important;
+}
+
+#cabecalho .menu.superior .nivel-dois li:hover a {
+   color: var(--white) !important;
+}
+
 #cabecalho .conteiner .conteudo-topo > .superior {
    display: none !important;
 }
@@ -2522,12 +2530,12 @@ div#exibirFormasPagamento .btn.btn-small {
 .menu.superior .nivel-dois {
 	top: 60px;
 	padding: 0;
-	background: var(--black);
+	background: var(--white);
 }
 
 .menu.superior .nivel-tres {
 	padding: 0;
-	background: var(--black);
+	background: var(--white);
 }
 
 .menu.superior .nivel-dois > li,
@@ -4334,6 +4342,14 @@ body.ofertas-destacadas-abertas {
    color: var(--white) !important;
  }
  
+ .botao-comprar-whatsapp span {
+   color: var(--white);
+}
+
+a.botao-comprar-whatsapp img {
+   filter: brightness(0) invert(1);
+}
+
  .botao-comprar-whatsapp:hover {
    color: var(--white) !important;
    filter: brightness(.92);
