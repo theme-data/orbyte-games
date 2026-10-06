@@ -2999,7 +2999,7 @@ div#exibirFormasPagamento .btn.btn-small {
    top: 0;
    display: flex;
    flex-direction: column;
-   background: var(--black);
+   background: var(--fundo-cabecalho);
    width: 80%;
    height: 100dvh;
    box-shadow: 0 0 0 9999px var(--black-alpha-50);
