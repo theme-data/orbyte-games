@@ -1758,10 +1758,13 @@ div#modal-pagamento.ativo {
 }
 
 .compre-junto__resumo {
-    background: var(--surface-dark);
-    border: 0;
-    height: fit-content;
-    padding: 24px;
+   background: var(--surface-dark);
+   border: 0;
+   height: fit-content;
+   padding: 24px;
+   width: 100% !important;
+   margin: 0 32px;
+   box-sizing: border-box;
 }
 
 .compre-junto__conteudo {
@@ -1823,20 +1826,12 @@ div#modal-pagamento.ativo {
     background: var(--brand-color) !important;
 }
 
-.compre-junto__etiqueta {
-    border-radius: 0;
-    width: 100%;
-    left: 0;
-    transform: none;
-    top: 0;
-    background: var(--brand-color);
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
 .compre-junto__produto--principal {
     border: 1px solid var(--white-alpha-20);
     border-radius: 0;
+    width: 100%; 
+    margin: 0 32px;
+    box-sizing: border-box
 }
 
 .atributo-comum a.indisponivel {
