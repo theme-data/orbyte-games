@@ -1635,8 +1635,12 @@ div#modal-pagamento.ativo {
    border-right: 1px solid var(--black-alpha-10);
 }
 
-.produto .conteiner-imagem>div:first-child {
-   text-align: center;
+@media screen and (min-width: 768px) {
+   .produto .conteiner-imagem>div:first-child {
+      text-align: center;
+      float: left;
+      width: 70%;
+   }
 }
 
 .pagina-produto #corpo .conteiner {
@@ -2778,6 +2782,7 @@ div#exibirFormasPagamento .btn.btn-small {
 .pagina-busca .ordenar-listagem.topo {
    display: flex;
    padding: 0 32px 20px;
+   justify-content: space-between;
 }
 
 .breadcrumbs {
