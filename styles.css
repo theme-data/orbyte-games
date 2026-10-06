@@ -1890,6 +1890,10 @@ background: var(--white);
    max-width: 100%;
 }
 
+.pagina-categoria .ordenar-listagem.topo .row-fluid {
+   width: 100%;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1782px) {
    .compre-junto__produto--principal {
        display: none;
@@ -1971,6 +1975,7 @@ background: var(--white);
       color: var(--black) !important;
       text-shadow: none;
       font-size: 14px;
+      background: var(--white) !important;
    }
    
    .btn-filtrar:after {
@@ -2490,6 +2495,9 @@ div#exibirFormasPagamento .btn.btn-small {
 .menu.superior .nivel-um > li > a i {
 	margin: 0;
 	background: none;
+   color: var(--white);
+   top: -1px;
+   position: relative;
 }
 
 .menu.superior .nivel-dois {
