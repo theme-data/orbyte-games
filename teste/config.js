@@ -1,0 +1,329 @@
+// Configuração existente da loja demonstrativa; revise os dados comerciais antes de produção.
+window.THEME_CONFIG = {
+
+    /* =========================
+      VÍDEO EM DESTAQUE — GTA VI
+    ========================== */
+    videoDestaqueHome: {
+      ativo: true,
+      somenteHome: true,
+
+      /* A seção será inserida antes deste elemento */
+      seletorInsercao: ".vitrine-24162843",
+
+      etiqueta: "GRAND THEFT AUTO VI",
+      titulo: "A nova era de Vice City está chegando.",
+      descricao: "Prepare-se para viver a história de Jason e Lucia no aguardado GTA VI. Garanta sua pré-venda e fique pronto para jogar no lançamento.",
+
+      textoBotao: "ASSISTIR TRAILER",
+
+      /* Trailer 2 oficial da Rockstar Games */
+      youtubeId: "VQRLujxTm3c",
+
+      /*
+        Deixe vazio para usar automaticamente
+        a thumbnail oficial do vídeo no YouTube.
+      */
+      imagemFundo: "",
+
+      /* esquerda | centro */
+      alinhamentoTexto: "esquerda"
+    },
+
+    /* =========================
+      AVALIAÇÕES — HOME
+    ========================== */
+    avaliacoesHome: {
+      ativo: true,
+      somenteHome: true,
+
+      /* A seção será inserida antes deste elemento */
+      seletorInsercao: "#rodape",
+
+      etiqueta: "AVALIAÇÕES DE CLIENTES",
+      titulo: "Quem compra, recomenda",
+
+      reviews: [
+        {
+          ativo: true,
+          nota: 5,
+          texto: "Compra rápida, segura e a chave chegou poucos minutos após o pagamento. Recomendo muito!",
+          nome: "Lucas M.",
+          cargo: "Cliente verificado",
+          foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/01.png"
+        },
+        {
+          ativo: true,
+          nota: 5,
+          texto: "Preço excelente e atendimento muito bom. Já comprei várias vezes e sempre deu tudo certo.",
+          nome: "Rafael S.",
+          cargo: "Cliente verificado",
+          foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/02.png"
+        },
+        {
+          ativo: true,
+          nota: 5,
+          texto: "Site fácil de usar, entrega imediata e ativação sem dificuldade. Experiência muito boa.",
+          nome: "Marcos P.",
+          cargo: "Cliente verificado",
+          foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/03.png"
+        },
+        {
+          ativo: true,
+          nota: 4.5,
+          texto: "Minha segunda compra na loja. Processo simples, confiável e recebi tudo certinho.",
+          nome: "Gabriel A.",
+          cargo: "Cliente verificado",
+          foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/04.png"
+        },
+        {
+          ativo: true,
+          nota: 5,
+          texto: "O suporte respondeu rápido e resolveu minha dúvida. Voltarei a comprar com certeza.",
+          nome: "Felipe C.",
+          cargo: "Cliente verificado",
+          foto: "https://cdn.awsli.com.br/2942/2942234/arquivos/01.png"
+        }
+      ]
+    },
+
+    /* =========================
+      BOTÃO "COMPRE PELO WHATSAPP"
+      NA LISTAGEM DE PRODUTOS
+    ========================== */
+    whatsappListagem: {
+      ativo: true,
+
+      /* Somente números, com DDI e DDD */
+      telefone: "5511999999999",
+
+      textoBotao: "COMPRE PELO WHATSAPP",
+
+      mensagem: "Olá! Tenho interesse neste produto:\n\n{produto}\n{link}",
+
+      /* Exibe somente nas vitrines/listagens.
+        Não adiciona na página individual do produto. */
+      novaAba: true
+    },
+
+    /* =========================
+      TEMA DO CABEÇALHO
+      Opções: "dark" | "light"
+    ========================== */
+    temaCabecalho: "dark",
+
+    /* =========================
+      OFERTAS DESTACADAS
+    ========================== */
+    ofertasDestacadas: {
+      ativo: true,
+
+      tituloAba: "Ofertas para você",
+      tituloPainel: "Ofertas especiais",
+      textoVazio: "Nenhuma oferta disponível no momento.",
+
+      /* true: o painel abre automaticamente na primeira visita */
+      abrirAutomaticamente: false,
+
+      ofertas: [
+        {
+          ativo: true,
+          titulo: "Economize 10% na sua compra",
+          descricao: "Use o cupom na finalização do pedido",
+          tipo: "cupom", // cupom | link
+          cupom: "GARA10",
+          textoBotao: "COPIAR"
+        },
+        {
+          ativo: true,
+          titulo: "Jogos selecionados com desconto",
+          descricao: "Ofertas válidas por tempo limitado",
+          tipo: "link",
+          link: "/promocao",
+          textoBotao: "VER OFERTAS"
+        },
+        {
+          ativo: true,
+          titulo: "Frete grátis",
+          descricao: "Para pedidos acima de R$ 199",
+          tipo: "link",
+          link: "/frete-gratis",
+          textoBotao: "APROVEITAR"
+        }
+      ]
+    },
+      
+    /* =========================
+      TEXTO BARRA INICIAL
+    ==========================*/
+    alertBar: {
+      mensagem: "Receba em seu e-mail em até 10 minutos"
+    },
+
+    /* =========================
+      VITRINE DESTAQUE
+    ========================== */
+    vitrineDestaque: {
+      idVitrine: "24162844",
+
+      seloPadrao: "OFERTA",
+      textoBotao: "VER OFERTA",
+      mostrarDesconto: true
+    },
+
+    /* =========================
+      ✨ BANNERS POR CATEGORIA (HOME)
+      Use o ID da vitrine/categoria exibido na home.
+      Para não mostrar um banner, remova o item ou use ativo: false.
+    ==========================*/
+    bannersCategoriasHome: [
+      {
+        ativo: true,
+        idCategoria: "24286696",
+        etiqueta: "PROMOÇÃO JOGOS",
+        titulo: "Ofertas especiais para você",
+        usarContador: true,
+        dataFim: "2026-12-31T23:59:59-03:00",
+        texto: "Jogos selecionados com desconto por tempo limitado.",
+        textoBotao: "VER JOGOS",
+        linkBotao: "/promocao"
+      }
+    ],
+  
+    /* =========================
+      MOVER TARJA
+    ==========================*/
+    vitrineTarja: {
+      idVitrine: "24162844"
+    },
+  
+    /* =========================
+      📦 ALERTA PRODUTO CONFIG
+    ==========================*/
+    alertaProduto: {
+      icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/shield.svg",
+      texto: "Compra segura, receba em minutos."
+    },
+  
+    /* =========================
+       📲 WHATSAPP
+    ==========================*/
+    whatsappNumbers: [
+      { title: "Vendas", phone: "5511999999999", display: "(11) 99999-9999" },
+      { title: "Suporte", phone: "5511988888888", display: "(11) 98888-8888" },
+      { title: "Financeiro", phone: "5511977777777", display: "(11) 97777-7777" }
+    ],
+  
+    /* =========================
+       📲 MINI BANNER
+    ==========================*/
+    miniBannerPosicao: "lancamento",
+  
+  
+    /* =========================
+       🧾 ATENDIMENTO
+    ==========================*/
+    atendimento: {
+      titulo: "Atendimento",
+  
+      horarios: [
+        "Segunda a sexta: 11:30 ás 22:00h",
+        "Sabado: 10:00h ás 18:00h",
+        "Domingo e Feriado: Fechado"
+      ],
+  
+      whatsapp: {
+        icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/whatsapp.svg",
+        alt: "Whatsapp",
+        number: "(11) 98765-4321"
+      },
+  
+      email: {
+        icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/email.svg",
+        alt: "Email",
+        address: "contato@themegames.com.br"
+      }
+    },
+  
+    /* =========================
+      📢 TARJA AUTO SLIDE (IMAGEM)
+    ==========================*/
+    tarja: [
+      { icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/card-check.svg", titulo: "Parcele em até", texto: "12x no cartão de crédito." },
+      { icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/envio-digital.svg", titulo: "Envio Digital", texto: "Por E-mail ou Whatsapp." },
+      { icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/discount.svg", titulo: "Indique um amigo", texto: "Indique um amigo e ganhe 15% off." },
+      { icon: "https://cdn.awsli.com.br/2942/2942234/arquivos/compra-segura.svg", titulo: "Pagamento seguro", texto: "Suas informações com segurança." }
+    ],
+  
+    /* =========================
+       🗂️ CATEGORIAS HOME
+    ==========================*/
+    categorias: [
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/1.png", link: "#", alt: "Categoria 01", titulo: 'Wolverine' },
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/2.png", link: "#", alt: "Categoria 02", titulo: 'FC 27'},
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/3.png", link: "#", alt: "Categoria 03", titulo: 'RE: Requiem' },
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/4.png", link: "#", alt: "Categoria 04", titulo: 'NBA 2K27' },
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/5.png", link: "#", alt: "Categoria 05", titulo: 'Onimusha' },
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/6.png", link: "#", alt: "Categoria 06", titulo: 'God of War' },
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/7.png", link: "#", alt: "Categoria 01", titulo: 'Forza' },
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/8.png", link: "#", alt: "Categoria 02", titulo: 'DawnWalker'},
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/9.png", link: "#", alt: "Categoria 03", titulo: 'Control' },
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/10.png", link: "#", alt: "Categoria 04", titulo: 'Call of Duty' },
+      { img: "https://cdn.awsli.com.br/2942/2942234/arquivos/11.png", link: "#", alt: "Categoria 05", titulo: 'Silent Hill' }
+    ],
+  
+  
+    /* =========================
+       ❓ FAQ
+    ==========================*/
+    faqItems: [
+      {
+        pergunta: "Quais formas de pagamento vocês aceitam?",
+        resposta: "Aceitamos cartão de crédito, PIX e boleto bancário."
+      },
+      {
+        pergunta: "Como recebo meu jogo após a compra?",
+        resposta: "Você receberá o código de ativação por e-mail imediatamente após a confirmação do pagamento."
+      },
+      {
+        pergunta: "Os jogos são originais?",
+        resposta: "Sim. Todos os jogos são originais e possuem ativação oficial."
+      },
+      {
+        pergunta: "Em quanto tempo meu pedido é liberado?",
+        resposta: "Pedidos pagos via PIX ou cartão são liberados automaticamente."
+      },
+      {
+        pergunta: "Não recebi meu código. O que faço?",
+        resposta: "Verifique o spam ou entre em contato com o suporte."
+      }
+    ],
+  
+  
+    /* =========================
+       ⭐ BENEFÍCIOS
+    ==========================*/
+    beneficios: [
+      {
+        icone: "🎧",
+        titulo: "Atendimento ao cliente",
+        texto: "Conte com suporte 24/7"
+      },
+      {
+        icone: "📦",
+        titulo: "Frete rápido e grátis",
+        texto: "Frete grátis em pedidos acima do valor mínimo."
+      },
+      {
+        icone: "👥",
+        titulo: "Indique um amigo",
+        texto: "Ganhem desconto juntos."
+      },
+      {
+        icone: "🔒",
+        titulo: "Pagamento seguro",
+        texto: "Seus dados protegidos."
+      }
+    ]
+  
+  };
