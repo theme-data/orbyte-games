@@ -5199,8 +5199,8 @@ body.ofertas-destacadas-abertas {
 }
 
 .bandeiras-produto .bandeira-promocao {
-   background-color: var(--flag-bg)!important;
-   color: var(--flag-texto) !important;
+   background-color: var(--fundo-flag)!important;
+   color: var(--texto-flag) !important;
 }
 
 .bandeiras-produto span {
