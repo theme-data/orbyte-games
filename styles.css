@@ -874,6 +874,14 @@ span.bn-t-title {
    flex-direction: column;
 }
 
+.c-item a span {
+   width: 100%;
+   text-align: center;
+   text-overflow: ellipsis;
+   text-wrap: nowrap;
+   overflow: hidden;
+}
+
 .c-item a img {
    max-height: 90px;
    padding: 0;
@@ -1213,7 +1221,6 @@ span.bn-t-title {
    background: var(--white) !important;
    border: 0!Important;
    padding: 32px !important;
-   max-width: 1500px;
    margin: 0 auto;
    box-sizing: border-box;
 }
@@ -1259,7 +1266,6 @@ span.bn-t-title {
 #rodape .pagamento-selos {
    padding: 32px;
    margin: 0 auto;
-   max-width: 1500px;
    box-sizing: border-box;
 }
 
