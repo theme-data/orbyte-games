@@ -1636,10 +1636,14 @@ div#modal-pagamento.ativo {
 }
 
 @media screen and (min-width: 768px) {
-   .thumbs-vertical[style="display: none;"] + .conteiner-imagem > div:first-child {
+   .conteiner-imagem > div:first-child {
       text-align: center;
       float: left;
       width: 70%;
+   }
+
+   .thumbs-vertical[style="display: none;"] + .conteiner-imagem > div:first-child {
+      width: 100%;
    }
 }
 
