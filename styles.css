@@ -1994,6 +1994,21 @@ background: var(--white);
       left: auto;
    }
    
+   #modalContato .modal-header {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
+      padding: 16px;
+      margin: 0;
+  }
+  
+  #modalContato .modal-header .close {
+      position: absolute;
+      right: 10px;
+      top: 17px;
+  }
+
    #modalFiltros.modal.fade {
       height: calc(100vh - 40px);
       top: 20px;
