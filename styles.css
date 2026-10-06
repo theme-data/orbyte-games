@@ -1068,7 +1068,7 @@ body:not(.pagina-inicial) .c-slide-section {
 }
 
 .pagina-produto .produto > .row-fluid > .span5 {
-   max-width: 500px;
+   max-width: 600px;
    padding: 40px;
    position: sticky;
    top: 100px;
