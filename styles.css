@@ -988,6 +988,10 @@ span.bn-t-title {
    box-sizing: border-box;
 }
 
+body:not(.pagina-inicial) .c-slide-section {
+   display: none;
+}
+
 /* Página do produto */
 
 .acoes-produto .preco-produto * {
