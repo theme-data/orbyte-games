@@ -141,7 +141,6 @@ input {
    padding: 0 16px!important;
    border-radius: 0!important;
    border: 1px solid var(--black-alpha-10)!important;
-   font-family: "Chakra Petch", sans-serif;
 }
 
 input:focus {
@@ -1779,7 +1778,6 @@ div#modal-pagamento.ativo {
     background: var(--brand-color);
     color: var(--white);
     text-transform: uppercase;
-    font-family: "Chakra Petch", sans-serif;
     box-shadow: none;
     border-radius: 0;
 }
@@ -2256,7 +2254,6 @@ background: var(--white);
    .finalizar-compra .span12 .botao.grande {
        height: 60px!important;
        text-transform: uppercase;
-       font-family: "Chakra Petch", sans-serif;
        text-shadow: none;
        font-weight: bold;
        font-size: 18px;
@@ -2298,7 +2295,6 @@ background: var(--white);
       border-radius: 0;
       text-transform: uppercase;
       font-size: 14px;
-      font-family: 'Chakra Petch';
       text-shadow: none;
       font-weight: 600;
   }
@@ -2407,7 +2403,6 @@ background: var(--white);
    height: 80px!important;
    font-weight: 600;
    text-shadow: none;
-   font-family: "Chakra Petch", sans-serif;
    text-transform: uppercase;
    font-size: 20px;
    width: 100%;
@@ -2437,7 +2432,6 @@ background: var(--white);
    padding: 0 16px !important;
    border-radius: 0 !important;
    border: 1px solid var(--black-alpha-10) !important;
-   font-family: "Chakra Petch", sans-serif;
 }
 
 .formas .accordion-heading .forma-conteiner * {
@@ -2477,7 +2471,6 @@ textarea {
    padding: 10px 16px !important;
    border-radius: 0 !important;
    border: 1px solid var(--black-alpha-10) !important;
-   font-family: "Chakra Petch", sans-serif;
 }
 
 div#exibirFormasPagamento .btn.btn-small {
@@ -5284,4 +5277,26 @@ a.botao-comprar-whatsapp img {
 .banner-categoria-botao {
    background: var(--brand-color)!important;
    color: var(--white) !important;
+}
+
+.total strong, 
+table .font-15, 
+.descontos strong,
+.subtotal strong {
+   color: var(--preco-pdp);
+   font-weight: bold;
+}
+
+.cadastro .tipo-cadastro label input {
+   height: inherit!important;
+}
+
+.cadastro .span3 {
+   display: flex;
+}
+
+.cadastro .span3 .botao:not(.principal) {
+   background: var(--white)!important;
+   border: 1px solid #d8d8d8;
+   color: var(--black)!important;
 }
