@@ -1328,7 +1328,6 @@ ul.whatsapp-dropdown-menu li {
 
 .breadcrumbs ul,
 .breadcrumbs li {
-	display: none;
 	gap: 10px;
 }
 
@@ -1974,7 +1973,8 @@ background: var(--white);
       left: auto;
       transition: all 0.4s;
       overflow-y: scroll;
-      border-radius: 0;
+      border-radius: 12px;
+      border: 0;
    }
    
    #modalFiltros .modal-body {
@@ -1988,6 +1988,7 @@ background: var(--white);
    .filtro {
       padding: 0;
       box-shadow: none;
+      outline: 0;
       border: 0;
    }
    
@@ -1999,6 +2000,21 @@ background: var(--white);
    .filtro h4 {
       font-size: 24px;
       font-weight: bold;
+      border: 0;
+   }
+
+   .filtro.lista ul li {
+      border: 0;
+  }
+
+  .filtro.lista ul li:hover label {
+      background: transparent !important;
+      color: var(--brand-color) !important;
+   }
+
+   .modal-ordenar .dropdown-menu>li>a:hover {
+      background: #fff;
+      color: var(--brand-color);
    }
    
    .modal-filtros {
