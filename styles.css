@@ -1948,11 +1948,9 @@ background: var(--white);
    }
    
    .pagina-categoria .conteudo .btn-filtrar {
-      background: none !important;
-      border: 1px solid var(--brand-color);
-      text-shadow: none;
+      border: 1px solid var(--black);
       color: var(--black) !important;
-      font-family: 'Chakra Petch', sans-serif;
+      text-shadow: none;
       font-size: 14px;
    }
    
@@ -5221,12 +5219,6 @@ body.ofertas-destacadas-abertas {
    border: 1px solid var(--whatsapp-color);
    color: var(--white) !important;
 
-}
-
-
-.pagina-categoria .conteudo .btn-filtrar {
-   border: 1px solid var(--black);
-   color: var(--black) !important;
 }
 
 .atributos ul li a * {
