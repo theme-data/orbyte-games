@@ -1129,6 +1129,19 @@ body:not(.pagina-inicial) .c-slide-section {
    font-weight: 600;
 }
 
+.links-rodape ul li:hover a {
+   color: var(--brand-color);
+   text-decoration: none;
+}
+
+button.whatsapp-btn:hover {
+   color: var(--brand-color);
+}
+
+.atendimento-rodape ul *:hover {
+   color: #fff;
+}
+
 #rodape .pagamento-selos .titulo {
    color: var(--black);
 }
