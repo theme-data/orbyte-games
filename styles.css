@@ -1075,6 +1075,12 @@ body:not(.pagina-inicial) .c-slide-section {
    margin: 0;
 }
 
+.ordenar-listagem.topo,
+.listagem .listagem-linha,
+.ordenar-listagem.rodape {
+   border: 0;
+}
+
 .produto .acoes-produto .comprar .qtde-adicionar-carrinho .qtde-carrinho {
    width: 100%;
    box-sizing: border-box;
