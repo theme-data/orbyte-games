@@ -1912,6 +1912,7 @@ background: var(--white);
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: fit-content;
    }
    
    .ordenar-listagem.topo .row-fluid:before,
@@ -4288,9 +4289,6 @@ body.ofertas-destacadas-abertas {
    margin-top: 8px;
    padding: 6px 12px;
    border-radius: 6px;
-   background: var(--white);
-   border: 1px solid var(--whatsapp-color);
-   color: var(--pure-black) !important;
    font-size: 11px;
    font-weight: 800;
    line-height: 1;
@@ -4298,6 +4296,9 @@ body.ofertas-destacadas-abertas {
    text-decoration: none !important;
    transition: transform .2s ease, filter .2s ease;
    box-sizing: border-box;
+   background: var(--whatsapp-color)!important;
+   border: 1px solid var(--whatsapp-color);
+   color: var(--white) !important;
  }
  
  .botao-comprar-whatsapp:hover {
@@ -5219,15 +5220,6 @@ body.ofertas-destacadas-abertas {
 
 .carrinho-interno .nome-produto {
    color: black !important;
-}
-
-
-.botao-comprar-whatsapp {
-
-   background: var(--whatsapp-color)!important;
-   border: 1px solid var(--whatsapp-color);
-   color: var(--white) !important;
-
 }
 
 .atributos ul li a * {
