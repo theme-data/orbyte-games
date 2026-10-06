@@ -5139,3 +5139,81 @@ body.ofertas-destacadas-abertas {
 }
 
 }
+
+
+.produto .acoes-produto .preco-produto .preco-promocional.titulo {
+   color: #41975e!important;
+}
+
+.listagem-item .preco-parcela strong, .listagem-item .desconto-a-vista strong {
+   font-weight: bold!important;
+   color: #41975e!important;
+}
+
+.vitrine-destaque-produtos .preco-produto > div strong.titulo {
+   margin: 1px 0 3px;
+   color: #41975e !important;
+   font-size: 23px;
+   font-weight: 800;
+   line-height: 1;
+}
+
+.bandeiras-produto .bandeira-promocao {
+   background-color: #5bd985!important;
+   color: var(--black) !important;
+}
+
+.bandeiras-produto span {
+   font-size: 12px;
+   font-weight: 800 !important;
+}
+
+
+.menu.superior .nivel-um li strong:after {
+   height: 2px!important;
+   background: var(--brand-color)!important;
+}
+
+#rodape .pagamento-selos {
+   padding: 32px;
+   max-width: auto!important;
+   background: white!important;
+}
+
+.tema-cabecalho-dark .carrinho .carrinho-interno {
+   background: var(--fundo-cabecalho)!important;
+}
+
+.carrinho-interno .nome-produto {
+   color: black !important;
+}
+
+
+.botao-comprar-whatsapp {
+
+   background: var(--whatsapp-color)!important;
+   border: 1px solid var(--whatsapp-color);
+   color: var(--white) !important;
+
+}
+
+
+.pagina-categoria .conteudo .btn-filtrar {
+   border: 1px solid var(--black);
+   color: var(--black) !important;
+}
+
+.atributos ul li a * {
+   color: var(--black);
+   font-weight: bold!important;
+   font-size: 16px !important;
+}
+
+.banner-categoria-conteudo {
+   background: #07095b!important;
+}
+
+.banner-categoria-botao {
+   background: var(--brand-color)!important;
+   color: var(--white) !important;
+}
