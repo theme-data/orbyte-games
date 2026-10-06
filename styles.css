@@ -649,7 +649,7 @@ span.bn-t-title {
 .listagem .preco-produto>div strong.titulo {
    font-size: 22px;
    font-weight: 700;
-   color: var(--brand-color);
+   color: var(--preco-listagem);
    margin-bottom: 8px;
    opacity: 1;
 }
@@ -1001,7 +1001,7 @@ body:not(.pagina-inicial) .c-slide-section {
 
 .acoes-produto .preco-produto .desconto-a-vista > strong {
    font-size: 26px!important;
-   color: var(--brand-color);
+   color: var(--preco-pdp-a-vista);
 }
 
 .produto .nome-produto {
@@ -1360,6 +1360,7 @@ ul.whatsapp-dropdown-menu li {
 .produto .acoes-produto .preco-produto .preco-promocional.titulo {
 	font-weight: bold;
 	font-size: 32px;
+   color: var(--preco-pdp);
 }
 
 .produto .comprar > .botao.botao-comprar {
@@ -5164,11 +5165,6 @@ body.ofertas-destacadas-abertas {
 
 }
 
-
-.produto .acoes-produto .preco-produto .preco-promocional.titulo {
-   color: #41975e!important;
-}
-
 .listagem-item .preco-parcela strong, .listagem-item .desconto-a-vista strong {
    font-weight: bold!important;
    color: #41975e!important;
@@ -5183,8 +5179,8 @@ body.ofertas-destacadas-abertas {
 }
 
 .bandeiras-produto .bandeira-promocao {
-   background-color: #5bd985!important;
-   color: var(--black) !important;
+   background-color: var(--flag-bg)!important;
+   color: var(--flag-texto) !important;
 }
 
 .bandeiras-produto span {
