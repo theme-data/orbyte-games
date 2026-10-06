@@ -3798,6 +3798,7 @@ section.faq-section {
 
 .pagination ul>li>a:hover, .pagination ul>li>a:focus, .pagination ul>.active>a, .pagination ul>.active>span {
    background: var(--brand-color);
+   color: var(--white);
 }
 
 .pagina-pagina .conteudo p, .pagina-pagina .conteudo span, .pagina-pagina .conteudo b, .pagina-pagina .conteudo h1, .pagina-pagina .conteudo h2, .pagina-pagina .conteudo h3, .pagina-pagina .conteudo h4, .pagina-pagina .conteudo strong {
