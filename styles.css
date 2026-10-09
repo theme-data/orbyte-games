@@ -4399,7 +4399,7 @@ a.botao-comprar-whatsapp img {
  
  .avaliacoes-home-cabecalho h2 {
    margin: 0;
-   color: var(--black) !important;
+   color: var(--black);
    font-size: clamp(28px, 3.2vw, 42px);
    line-height: 1.05;
  }
