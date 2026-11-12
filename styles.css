@@ -5299,3 +5299,8 @@ table .font-15,
    border: 1px solid #d8d8d8;
    color: var(--black)!important;
 }
+
+#rodape>div:last-child .row-fluid div:last-child img {
+   max-width: 160px!important;
+   margin-top: 4px;
+}
