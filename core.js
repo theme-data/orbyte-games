@@ -33,7 +33,9 @@ $(document).ready(function(){
   // $('.selos li:first-child img').attr('src','https://cdn.awsli.com.br/2830/2830294/arquivos/site-protegido.svg');
   $('#rodape>div:last-child .conteiner .row-fluid div:not(.span12)').before(`<div class="feito-pixelset"><a href="https://www.pixelset.com.br/" class="pixel-logo" target="_blank"><img src="https://cdn.awsli.com.br/2942/2942234/arquivos/pixel-set.svg" alt="Pixelset"></a></div>`)
   $('#rodape>div:last-child .row-fluid > div:last-child').attr('style','');
-  $('#rodape>div:last-child .row-fluid div:last-child img').attr('src','https://cdn.awsli.com.br/2942/2942234/arquivos/logo_li.png');
+  $('#rodape>div:last-child .row-fluid div:last-child img').replaceWith(`
+    <img src="https://cdn.awsli.com.br/2942/2942234/arquivos/logo_li.png" alt="Logo Loja Integrada"/>
+    `);
   
 
   var whatsappNumbers = CONFIG.whatsappNumbers || [];
